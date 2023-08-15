@@ -1,0 +1,6 @@
+sudo docker compose -f docker-compose.production.yml ps
+sudo docker compose -f docker-compose.production.yml down
+sudo docker compose -f docker-compose.production.yml up -d 
+sudo service nginx reload
+sudo systemctl reload nginx
+nano /etc/nginx/sites-enabled/default
